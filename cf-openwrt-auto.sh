@@ -3,8 +3,6 @@
 [[ ! -d "/paniy/cloudflare" ]] && mkdir -p /paniy/cloudflare
 cd /paniy/cloudflare
 
-opkg install jq
-
 arch=$(uname -m)
 if [[ ${arch} =~ "x86" ]]; then
 	tag="amd"
